@@ -19,7 +19,6 @@ class Config {
 	private $errorList;
 	/** @var Config */
 	private static $_instance; // Design Pattern "Singleton"
-
 	public function __construct() {
 		$this->baseDir = dirname(dirname(dirname(dirname(__FILE__))));
 		$this->viewsDir = $this->baseDir.DIRECTORY_SEPARATOR.'views';
